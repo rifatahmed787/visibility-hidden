@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 150px;
+            width: 150px;
+            border: 2px solid lightblue;
+            background-color: aqua;
+        }
+
+        .inner {
+            height: 150px;
+            width: 150px;
+            background-color: lightcoral;
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translateX(100px) rotate(45deg) scale(.5);
+
+            /* transform: translate(100px); */
+            /* transform: skewY(45deg); */
+            /* transform: scaleY(1.5); */
+            /* transform: rotateY(50deg); */
+            /* transform: scale(.5); */
+            /*100% means 1, that means 0.5 is 50% */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is transform html</h1>
+
+    <div class="container">
+        <div class="inner">box-1</div>
+    </div>
+
+    <div class="container">
+        <div class="inner">box-2</div>
+    </div>
+
+    <div class="container">
+        <div class="inner">box-3</div>
+    </div>
+
+</body>
+
+</html>
